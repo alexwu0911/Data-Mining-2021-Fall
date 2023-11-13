@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="FfC <= 0.5\ngini = 0.439\nsamples = 687\nvalue = [463, 224]\nclass = 0", fillcolor="#f2be99"] ;
+1 [label="DwD <= 0.5\ngini = 0.482\nsamples = 505\nvalue = [301, 204]\nclass = 0", fillcolor="#f7d6bf"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Allegiances_None <= 0.5\ngini = 0.499\nsamples = 353\nvalue = [185, 168]\nclass = 0", fillcolor="#fdf3ed"] ;
+1 -> 2 ;
+3 [label="gini = 0.496\nsamples = 243\nvalue = [110, 133]\nclass = 1", fillcolor="#ddeefb"] ;
+2 -> 3 ;
+4 [label="gini = 0.434\nsamples = 110\nvalue = [75, 35]\nclass = 0", fillcolor="#f1bc95"] ;
+2 -> 4 ;
+5 [label="Allegiances_Wildling <= 0.5\ngini = 0.361\nsamples = 152\nvalue = [116, 36]\nclass = 0", fillcolor="#eda876"] ;
+1 -> 5 ;
+6 [label="gini = 0.32\nsamples = 140\nvalue = [112, 28]\nclass = 0", fillcolor="#eca06a"] ;
+5 -> 6 ;
+7 [label="gini = 0.444\nsamples = 12\nvalue = [4, 8]\nclass = 1", fillcolor="#9ccef2"] ;
+5 -> 7 ;
+8 [label="Allegiances_None <= 0.5\ngini = 0.196\nsamples = 182\nvalue = [162, 20]\nclass = 0", fillcolor="#e89151"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Nobility <= 0.5\ngini = 0.134\nsamples = 139\nvalue = [129, 10]\nclass = 0", fillcolor="#e78b48"] ;
+8 -> 9 ;
+10 [label="gini = 0.24\nsamples = 43\nvalue = [37, 6]\nclass = 0", fillcolor="#e99559"] ;
+9 -> 10 ;
+11 [label="gini = 0.08\nsamples = 96\nvalue = [92, 4]\nclass = 0", fillcolor="#e68642"] ;
+9 -> 11 ;
+12 [label="SoS <= 0.5\ngini = 0.357\nsamples = 43\nvalue = [33, 10]\nclass = 0", fillcolor="#eda775"] ;
+8 -> 12 ;
+13 [label="gini = 0.231\nsamples = 30\nvalue = [26, 4]\nclass = 0", fillcolor="#e99457"] ;
+12 -> 13 ;
+14 [label="gini = 0.497\nsamples = 13\nvalue = [7, 6]\nclass = 0", fillcolor="#fbede3"] ;
+12 -> 14 ;
+}
